@@ -1,0 +1,49 @@
+{
+  "name": "idiosyncratic/http-server",
+  "description": "HTTP Server built on ReactPHP",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jason Silkey",
+      "email": "jason@jasonsilkey.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.3",
+    "evenement/evenement": "^3.0",
+    "nyholm/psr7": "^1.1",
+    "psr/http-factory": "^1.0",
+    "psr/http-message": "^1.0",
+    "psr/http-server-handler": "^1.0",
+    "psr/http-server-middleware": "^1.0",
+    "psr/log": "^1.1",
+    "react/http": "^0.8.4",
+    "react/socket": "^1.2"
+  },
+  "require-dev": {
+    "doctrine/coding-standard": "^5.0",
+    "phpspec/phpspec": "^5.1",
+    "phpstan/phpstan": "^0.11.2",
+    "phpunit/phpunit": "^8.0"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true,
+    "discard-changes": true,
+    "bin-dir" : "bin"
+  },
+  "autoload": {
+    "psr-4": {
+      "Idiosyncratic\\Http\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Idiosyncratic\\Http\\": "tests"
+    }
+  }
+}

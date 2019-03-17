@@ -1,0 +1,16 @@
+[*]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+charset = utf-8
+indent_style = space
+
+[*.md]
+# Remove trailing whitespace characters
+trim_trailing_whitespace = false
+
+[*.{php}]
+indent_size = 4
+
+[*.{yaml,yml,js,json,feature}]
+indent_size = 2
