@@ -25,7 +25,8 @@
     "doctrine/coding-standard": "^5.0",
     "phpspec/phpspec": "^5.1",
     "phpstan/phpstan": "^0.11.2",
-    "phpunit/phpunit": "^8.0"
+    "phpunit/phpunit": "^8.0",
+    "symfony/var-dumper": "^4.2"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
@@ -38,12 +39,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Idiosyncratic\\Http\\": "src"
+      "Idiosyncratic\\Http\\Server\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Idiosyncratic\\Http\\": "tests"
+      "Idiosyncratic\\Http\\Server\\": "tests"
     }
   }
 }
